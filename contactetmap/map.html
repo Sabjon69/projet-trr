@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Traduction - Montpellier</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', 'Sarabun', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col">
+
+
+<header class="bg-white shadow-sm mb-5 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <div class="flex items-center gap-2">
+              <img src="https://mail.google.com/mail/u/1?ui=2&ik=80d244751b&attid=0.1&permmsgid=msg-f:1855489406094022553&th=19c005c8b6bc1799&view=fimg&fur=ip&permmsgid=msg-f:1855489406094022553&sz=s0-l75-ft&attbid=ANGjdJ9i0ISJnjbwVXLtLEEY0aSE1bD4SwPm9msTHbt_bcRxvS7ph5qCCWumE35ExguV7CWUovQpZ_ThK3HlpRaf7_s1sChE64kfXRCuAZSnFNXnCJDSrEdJdtx9i68&disp=emb&realattid=ii_mkwty2cl0&zw"
+           alt="Logo DD Traduction"
+           class="w-30 h-30 object-contain" />
+    </div>
+
+    <nav class="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
+      <a href="../home/home.html" class="hover:text-emerald-600 transition">Home</a>
+
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-emerald-600 transition cursor-pointer">
+          Tarif et Procédure
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-xl border border-gray-100 rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="../trad/tarifestproc.html" class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 rounded-xl">Tarif et Procédure</a>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-emerald-600 transition cursor-pointer">
+          Contact
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-xl border border-gray-100 rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="../contactetmap/contact.html" class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 rounded-t-xl font-sarabun">Contacts</a>
+          <a href="../contactetmap/map.html" class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 rounded-b-xl">Localisation</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-4">
+      <a href="../connecter/login.html"
+         class="px-5 py-2 rounded-full border-2 border-emerald-600 text-emerald-700 text-sm font-bold hover:bg-emerald-600 hover:text-white transition-all">
+        Se connecter
+      </a>
+    </div>
+
+    <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-emerald-600 focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-6 space-y-4 shadow-xl">
+    <a href="../home/home.html" class="block text-base font-semibold text-gray-700 hover:text-emerald-600">Home</a>
+    
+    <div class="space-y-2">
+      <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Services</p>
+      <a href="../trad/tarifestproc.html" class="block text-base font-semibold text-gray-700 pl-2">Tarif et Procédure</a>
+    </div>
+
+    <div class="space-y-2">
+      <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Contact</p>
+      <a href="../contactetmap/contact.html" class="block text-base font-semibold text-gray-700 pl-2">Contacts</a>
+      <a href="../contactetmap/map.html" class="block text-base font-semibold text-gray-700 pl-2">Localisation</a>
+    </div>
+
+    <div class="pt-4">
+      <a href="../connecter/login.html" class="block w-full text-center py-3 bg-emerald-600 text-white rounded-xl font-bold">
+        Se connecter
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <!-- DÉGRADÉS DE FOND -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-100/40 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-slate-200/50 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
+    </div>
+
+    <!-- HEADER -->
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-12 w-full text-center md:text-left">
+        <h1 class="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter leading-none italic">Montpellier.</h1>
+        <p class="text-slate-500 text-xl md:text-2xl font-sarabun mt-6 italic max-w-3xl leading-relaxed">
+            Expertise en traduction et interprétariat franco-thaï sur <span class="text-slate-900 font-bold underline decoration-emerald-500 underline-offset-8"> la zone de Montpellier</span> et ses environs.
+        </p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-7xl mx-auto px-6 pb-24 w-full flex-grow">
+        
+        <div class="grid lg:grid-cols-12 gap-8">
+            
+            <!-- BLOC INFOS (5/12) -->
+            <div class="lg:col-span-5 space-y-6">
+                
+                <!-- Zone d'intervention -->
+                <div class="bg-slate-900 p-10 rounded-[3.5rem] text-white shadow-2xl relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <h3 class="text-emerald-400 font-black text-xs uppercase tracking-[0.3em] mb-10 italic">Zone d'intervention</h3>
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-5">
+                                <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 text-emerald-400">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-xl font-bold italic">Montpellier Centre</p>
+                                    <p class="text-slate-400 text-sm italic">Accompagnement en préfecture, mairie ou tribunal.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 text-emerald-400 font-sarabun text-xs font-bold">มงเปอลีเย</div>
+                                <div>
+                                    <p class="text-xl font-bold italic">Métropole & Région</p>
+                                    <p class="text-slate-400 text-sm italic">Déplacements possibles sur toute l'Hérault (34).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12 pt-8 border-t border-white/10">
+                            <p class="text-[10px] font-black uppercase text-slate-500 tracking-widest mb-4">Modalités</p>
+                            <p class="text-sm italic leading-relaxed text-slate-300">
+                             Pour l'envoi de documents, privilégiez le format numérique ou le courrier suivi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutons d'action rapides -->
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="mailto:contact.ddtraduction@gmail.com" class="p-6 bg-white border border-slate-200 rounded-[2rem] text-center hover:border-emerald-500 transition-all group">
+                        <p class="text-[10px] font-black text-slate-400 uppercase mb-2">E-mail</p>
+                        <p class="text-xs font-bold text-slate-900 group-hover:text-emerald-600 italic">Nous écrire (Cliquer)</p>
+                    </a>
+                    <div class="p-6 bg-white border border-slate-200 rounded-[2rem] text-center">
+                        <p class="text-[10px] font-black text-slate-400 uppercase mb-2">Ville</p>
+                        <p class="text-xs font-bold text-slate-900 italic">34000 Montpellier</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAP SECTION (7/12) -->
+            <div class="lg:col-span-7 bg-white rounded-[4rem] border border-slate-200 shadow-2xl overflow-hidden relative min-h-[500px] group">
+                
+                <!-- Google Maps Iframe centrée sur MONTPELLIER -->
+                <iframe 
+                    class="w-full h-full grayscale-[20%] contrast-[1.05] group-hover:grayscale-0 transition-all duration-1000"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46215.1158141445!2d3.8315132924391266!3d43.610920404098485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af0725dd9db1%3A0xad8756740118361!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1710000000000!5m2!1sfr!2sfr" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+
+                <!-- Badge flottant -->
+                <div class="absolute bottom-8 left-8 right-8 md:right-auto md:w-80 bg-white/90 backdrop-blur-xl p-6 rounded-[2.5rem] border border-white shadow-2xl">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white font-black text-xl italic shadow-lg">D</div>
+                        <div>
+                            <p class="text-[9px] font-black uppercase text-slate-400 tracking-[0.2em] leading-none mb-1 italic">Interprète Agréé</p>
+                            <p class="text-sm font-bold text-slate-900 italic">Zone Montpellier & Hérault</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+<footer class="bg-gray-900 text-gray-300 py-10 mt-16">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- Ligne du haut -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <!-- Mentions légales -->
+      <a href="#" class="text-sm tracking-wide hover:text-white transition">
+        Mentions légales
+      </a>
+
+      <!-- Nom -->
+      <p class="text-sm tracking-wide">
+        © 2025 — <span class="font-semibold text-white">Sabjon Mali</span>
+      </p>
+
+    </div>
+
+    <!-- Ligne du bas (fine ligne décorative) -->
+    <div class="mt-6 border-t border-gray-700 pt-4 text-center text-xs text-gray-500">
+      Tous droits réservés.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

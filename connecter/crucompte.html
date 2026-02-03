@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Créer un compte – DD Traduction</title>
+</head>
+
+<body class="bg-gray-50">
+
+
+
+
+
+    <header class="bg-white shadow-sm mb-5">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <div class="flex items-center gap-2">
+
+              <img src="https://mail.google.com/mail/u/1?ui=2&ik=80d244751b&attid=0.1&permmsgid=msg-f:1855489406094022553&th=19c005c8b6bc1799&view=fimg&fur=ip&permmsgid=msg-f:1855489406094022553&sz=s0-l75-ft&attbid=ANGjdJ9i0ISJnjbwVXLtLEEY0aSE1bD4SwPm9msTHbt_bcRxvS7ph5qCCWumE35ExguV7CWUovQpZ_ThK3HlpRaf7_s1sChE64kfXRCuAZSnFNXnCJDSrEdJdtx9i68&disp=emb&realattid=ii_mkwty2cl0&zw"
+           alt="Logo DD Traduction"
+           class="w-20 h-20 object-contain" />
+
+    </div>
+
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+
+      <!-- HOME -->
+      <div class="relative group">
+        <a href="../home/home.html" class="hover:text-emerald-600">Home</a>
+      </div>
+
+      <!-- TRADUCTION -->
+      <div class="relative group">
+        <a href="../trad/tarifestproc.html" class="hover:text-emerald-600">Tarif et Procédure</a>
+
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg border border-gray-200 rounded-lg
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+
+
+          <a href="../trad/tarifestproc.html"
+             class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+            Tarif et Procédure
+          </a>
+
+        </div>
+      </div>
+
+
+      <!-- DÉMARCHES -->
+      <div class="relative group">
+        <a href="../contactetmap/contact.html" class="hover:text-emerald-600">Contact</a>
+
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg border border-gray-200 rounded-lg
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+          <a href="../contactetmap/contact.html"
+             class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+            Contacts
+          </a>
+
+          <a href="../contactetmap/map.html"
+             class="block px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700">
+            Localisation
+          </a>
+
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- SECTION COMPTE / CONNEXION -->
+    <div class="hidden md:flex items-center gap-4">
+
+      <!-- VERSION NON CONNECTÉ : Bouton Se connecter -->
+      <a href="../connecter/login.html"
+         class="px-4 py-2 rounded-full border border-emerald-600 text-emerald-700 text-sm font-semibold hover:bg-emerald-50">
+        Se connecter
+      </a>
+
+    </div>
+
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+<!-- Conteneur principal -->
+<div class="min-h-screen flex items-center justify-center px-4">
+
+  <div class="bg-white shadow-lg border border-gray-100 rounded-2xl p-8 max-w-md w-full">
+
+    <!-- Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="https://mail.google.com/mail/u/1?ui=2&ik=80d244751b&attid=0.3&permmsgid=msg-f:1855489406094022553&th=19c005c8b6bc1799&view=fimg&fur=ip&permmsgid=msg-f:1855489406094022553&sz=s0-l75-ft&attbid=ANGjdJ9iz-iHT434EIAMIEboTgTdaYkr_LKhCbwUiQVRLfx82XEglaaC0q0Hp9qAHIeNTCzvDYgbtywHEeU7grpjIwY1NR50G_0on20cFFISwpgylYdB78VS_Om6knA&disp=emb&realattid=ii_mkwty9e32&zw" alt="Logo" class="w-24 h-24 object-contain" />
+    </div>
+
+    <!-- Titre -->
+    <h1 class="text-2xl font-bold text-center mb-2">Créer un compte</h1>
+    <p class="text-sm text-gray-600 text-center mb-6">
+      Accédez à votre espace client en quelques secondes
+    </p>
+
+   <!-- Formulaire -->
+<form class="space-y-4" action="/register" method="POST">
+
+  <div>
+    <label class="block text-sm font-medium mb-1">Nom complet</label>
+    <input type="text"
+           name="fullname"
+           class="w-full border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-500"
+           placeholder="Votre nom"
+           required />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-1">Adresse e-mail</label>
+    <input type="email"
+           name="email"
+           class="w-full border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-500"
+           placeholder="exemple@mail.com"
+           required />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-1">Mot de passe</label>
+    <input type="password"
+           name="password"
+           class="w-full border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-500"
+           placeholder="••••••••"
+           required />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-1">Confirmer le mot de passe</label>
+    <input type="password"
+           name="confirm"
+           class="w-full border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-emerald-500"
+           placeholder="••••••••"
+           required />
+  </div>
+
+  <button type="submit"
+          class="w-full py-2.5 rounded-full bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700">
+    Créer mon compte
+  </button>
+
+</form>
+
+
+    <!-- Liens -->
+    <div class="text-center mt-6">
+      <p class="text-sm text-gray-600">
+        Vous avez déjà un compte ?
+        <a href="login.html" class="text-emerald-600 hover:underline">Se connecter</a>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

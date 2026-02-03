@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expertise & Devis - DD Traduction</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', 'Sarabun', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+
+
+ <header class="bg-white shadow-sm mb-5 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <div class="flex items-center gap-2">
+              <img src="https://mail.google.com/mail/u/1?ui=2&ik=80d244751b&attid=0.1&permmsgid=msg-f:1855489406094022553&th=19c005c8b6bc1799&view=fimg&fur=ip&permmsgid=msg-f:1855489406094022553&sz=s0-l75-ft&attbid=ANGjdJ9i0ISJnjbwVXLtLEEY0aSE1bD4SwPm9msTHbt_bcRxvS7ph5qCCWumE35ExguV7CWUovQpZ_ThK3HlpRaf7_s1sChE64kfXRCuAZSnFNXnCJDSrEdJdtx9i68&disp=emb&realattid=ii_mkwty2cl0&zw"
+           alt="Logo DD Traduction"
+           class="w-30 h-30 object-contain" />
+    </div>
+
+    <nav class="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
+      <a href="../home/home.html" class="hover:text-emerald-600 transition">Home</a>
+
+      <div class="relative group">
+        <a href="../trad/tarifestproc.html" class="flex items-center gap-1 hover:text-emerald-600 transition cursor-pointer">
+          Tarif et Procédure
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-xl border border-gray-100 rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="../trad/tarifestproc.html" class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 rounded-xl">Tarif et Procédure</a>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <a  href="../contactetmap/contact.html" class="flex items-center gap-1 hover:text-emerald-600 transition cursor-pointer">
+          Contact
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-xl border border-gray-100 rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="../contactetmap/contact.html" class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 rounded-t-xl font-sarabun">Contacts</a>
+          <a href="../contactetmap/map.html" class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 rounded-b-xl">Localisation</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-4">
+      <a href="../connecter/login.html"
+         class="px-5 py-2 rounded-full border-2 border-emerald-600 text-emerald-700 text-sm font-bold hover:bg-emerald-600 hover:text-white transition-all">
+        Se connecter
+      </a>
+    </div>
+
+    <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-emerald-600 focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-6 space-y-4 shadow-xl">
+    <a href="../home/home.html" class="block text-base font-semibold text-gray-700 hover:text-emerald-600">Home</a>
+    
+    <div class="space-y-2">
+      <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Services</p>
+      <a href="../trad/tarifestproc.html" class="block text-base font-semibold text-gray-700 pl-2">Tarif et Procédure</a>
+    </div>
+
+    <div class="space-y-2">
+      <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Contact</p>
+      <a href="../contactetmap/contact.html" class="block text-base font-semibold text-gray-700 pl-2">Contacts</a>
+      <a href="../contactetmap/map.html" class="block text-base font-semibold text-gray-700 pl-2">Localisation</a>
+    </div>
+
+    <div class="pt-4">
+      <a href="../connecter/login.html" class="block w-full text-center py-3 bg-emerald-600 text-white rounded-xl font-bold">
+        Se connecter
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+    <section class="max-w-6xl mx-auto px-6 pt-20 pb-12">
+        <div class="bg-white rounded-[3rem] shadow-2xl shadow-slate-200/60 border border-slate-100 overflow-hidden grid md:grid-cols-5">
+            
+            <div class="md:col-span-2 bg-slate-900 p-10 md:p-14 text-white flex flex-col justify-between">
+                <div>
+                    <span class="text-emerald-400 font-black tracking-widest text-xs uppercase mb-4 block">Analyse & Estimation</span>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 italic underline decoration-emerald-500 underline-offset-8">Votre Projet</h2>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Confiez vos documents ou vos besoins en accompagnement pour une analyse personnalisée. Réponse sous <span class="text-white font-bold">24/48h</span>.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/20 font-bold italic">1</div>
+                            <p class="text-sm font-medium">Joignez vos fichiers ou détails</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/20 font-bold italic">2</div>
+                            <p class="text-sm font-medium">Précisez le contexte de la mission</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/20 font-bold italic">3</div>
+                            <p class="text-sm font-medium text-emerald-400">Recevez votre devis détaillé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 pt-8 border-t border-white/10 italic text-sm text-slate-500 font-sarabun">
+                    ประเมินราคาโครงการของคุณ - รับคำแนะนำแบบมืออาชีพและราคาที่แน่นอน
+                </div>
+            </div>
+
+            <div class="md:col-span-3 p-10 md:p-14">
+                <form action="#" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Nom complet / ชื่อ-นามสกุล</label>
+                            <input type="text" class="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-emerald-500 outline-none transition-all font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Email / อีเมล</label>
+                            <input type="email" class="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-emerald-500 outline-none transition-all font-medium">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Détails de votre demande / รายละเอียด</label>
+                        <textarea rows="4" class="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-emerald-500 outline-none transition-all font-medium resize-none" placeholder="Décrivez votre besoin (Traduction, Web, Accompagnement...)"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-black uppercase tracking-widest text-slate-400 mb-2">Fichiers (Scan / Photos)</label>
+                        <div class="relative group">
+                            <input type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
+                            <div class="w-full px-4 py-8 bg-emerald-50 border-2 border-dashed border-emerald-200 rounded-2xl flex flex-col items-center justify-center group-hover:bg-emerald-100 transition-colors">
+                                <svg class="w-8 h-8 text-emerald-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                                <span class="text-sm font-bold text-emerald-700">Déposer vos documents ici</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full py-5 bg-emerald-600 text-white font-black rounded-2xl hover:bg-slate-900 transition-all shadow-xl shadow-emerald-100 uppercase tracking-widest text-sm">
+                        Envoyer ma demande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 py-24">
+        
+        <header class="text-center mb-20">
+            <span class="text-emerald-600 font-black tracking-[0.3em] text-[10px] uppercase mb-4 block italic">Wall of Trust / ความไว้วางใจ</span>
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">Ils nous font confiance</h2>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm flex flex-col hover:border-emerald-200 transition-colors">
+                <div class="flex justify-between items-start mb-6">
+                    <svg class="w-8 h-8 text-slate-100" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16H19V14H16C14.899 14 14 13.101 14 12V9C14 7.899 14.899 7 16 7H19V4H16C13.239 4 11 6.239 11 9V12C11 13.101 11.899 14 13 14V16C11.899 16 11 16.899 11 18V21H14.017ZM3.017 21H6.017V18C6.017 16.899 6.899 16 8 16H11V14H8C6.899 14 6 13.101 6 12V9C6 7.899 6.899 7 8 7H11V4H8C5.239 4 3 6.239 3 9V12C3 13.101 3.899 14 5 14V16C3.899 16 3 16.899 3 18V21H3.017Z" /></svg>
+                </div>
+                <blockquote class="text-slate-700 text-lg leading-relaxed mb-8 flex-grow font-sarabun font-medium italic">
+                    "เปิดร้านอาหารที่ฝรั่งเศสและอยากมีเว็บไซต์... น้องมีความรู้เยอะมาก ได้คำแนะนำที่มีประโยชน์มากๆ ครบมากค่ะ ไม่ต้องกังวลเรื่องการตลาดออนไลน์ที่ต่างประเทศอีกต่อไป บอกเป็นภาษาไทย แต่งานออกมาเป็นฝรั่งเศส ลดขั้นตอนไปเยอะมาก"
+                </blockquote>
+                <div class="flex items-center gap-4 pt-6 border-t border-slate-50">
+                    <div class="w-12 h-12 bg-slate-900 rounded-2xl flex items-center justify-center text-white font-bold">NK</div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Nisarat K.</h4>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">CEO Bangkok Bistronomie Paris</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 p-10 rounded-[3rem] shadow-2xl flex flex-col text-white">
+                <div class="flex justify-between items-start mb-6">
+                    <svg class="w-8 h-8 text-white/5" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16H19V14H16C14.899 14 14 13.101 14 12V9C14 7.899 14.899 7 16 7H19V4H16C13.239 4 11 6.239 11 9V12C11 13.101 11.899 14 13 14V16C11.899 16 11 16.899 11 18V21H14.017ZM3.017 21H6.017V18C6.017 16.899 6.899 16 8 16H11V14H8C6.899 14 6 13.101 6 12V9C6 7.899 6.899 7 8 7H11V4H8C5.239 4 3 6.239 3 9V12C3 13.101 3.899 14 5 14V16C3.899 16 3 16.899 3 18V21H3.017Z" /></svg>
+                </div>
+                <blockquote class="text-slate-300 text-lg leading-relaxed mb-8 flex-grow italic font-light">
+                    "Dutsadi est excellent. J’approuve à 100% sa méthode d’interpretation qui me permet de comprendre les procès de sécurité industriel! Riche en vocabulaires techniques et droits, ponctuel, patient et super sympathique."
+                </blockquote>
+                <div class="flex items-center gap-4 pt-6 border-t border-white/10">
+                    <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white font-bold backdrop-blur-sm border border-white/10">OJ</div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Olivier J.</h4>
+                        <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Ingénieur GRDF France</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm flex flex-col hover:border-emerald-200 transition-colors">
+                <div class="flex justify-between items-start mb-6">
+                    <svg class="w-8 h-8 text-slate-100" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16H19V14H16C14.899 14 14 13.101 14 12V9C14 7.899 14.899 7 16 7H19V4H16C13.239 4 11 6.239 11 9V12C11 13.101 11.899 14 13 14V16C11.899 16 11 16.899 11 18V21H14.017ZM3.017 21H6.017V18C6.017 16.899 6.899 16 8 16H11V14H8C6.899 14 6 13.101 6 12V9C6 7.899 6.899 7 8 7H11V4H8C5.239 4 3 6.239 3 9V12C3 13.101 3.899 14 5 14V16C3.899 16 3 16.899 3 18V21H3.017Z" /></svg>
+                </div>
+                <blockquote class="text-slate-700 text-lg leading-relaxed mb-8 flex-grow font-sarabun font-medium">
+                    "ช่วยดูแลเรืองเอกสารการเปิดบริษัท และการกู้เงินธนาคารที่ฝรั่งเศสค่ะ ทำเรื่องยากให้ง่าย ปลอดภัย และรู้ว่าจะดำเนินเอกสารให้ถูกต้องอย่างไร... ทำงานแบบมืออาชีพ และเป็นกันเองมากๆ แนะนำเลยค่ะ"
+                </blockquote>
+                <div class="flex items-center gap-4 pt-6 border-t border-slate-50">
+                    <div class="w-12 h-12 bg-slate-100 rounded-2xl flex items-center justify-center text-slate-500 font-bold">KP</div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Koy PJ.</h4>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">CEO Siam Thai Bistro Montpellier</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm flex flex-col hover:border-emerald-200 transition-colors">
+                <div class="flex justify-between items-start mb-6">
+                    <svg class="w-8 h-8 text-slate-100" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16H19V14H16C14.899 14 14 13.101 14 12V9C14 7.899 14.899 7 16 7H19V4H16C13.239 4 11 6.239 11 9V12C11 13.101 11.899 14 13 14V16C11.899 16 11 16.899 11 18V21H14.017ZM3.017 21H6.017V18C6.017 16.899 6.899 16 8 16H11V14H8C6.899 14 6 13.101 6 12V9C6 7.899 6.899 7 8 7H11V4H8C5.239 4 3 6.239 3 9V12C3 13.101 3.899 14 5 14V16C3.899 16 3 16.899 3 18V21H3.017Z" /></svg>
+                </div>
+                <blockquote class="text-slate-700 text-lg leading-relaxed mb-8 flex-grow italic font-medium">
+                    "Excellent ! Bon professeur, très sympathique. Excellente pédagogie et grand investissement de recherche. Dutsadi ne regarde pas sa montre quand il s’agit de terminer une leçon."
+                </blockquote>
+                <div class="flex items-center gap-4 pt-6 border-t border-slate-50">
+                    <div class="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white font-bold">JJ</div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">Julien J.</h4>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Ingénieur CEA France</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+<footer class="bg-gray-900 text-gray-300 py-10 mt-16">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <a href="#" class="text-sm tracking-wide hover:text-white transition">
+        Mentions légales
+      </a>
+
+      <p class="text-sm tracking-wide">
+        © 2025 — <span class="font-semibold text-white">Sabjon Mali</span>
+      </p>
+
+    </div>
+
+    <div class="mt-6 border-t border-gray-700 pt-4 text-center text-xs text-gray-500">
+      Tous droits réservés.
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const fileInput = document.querySelector('input[type="file"]');
+    const fileLabel = document.querySelector('.group span'); 
+
+    if (fileInput) {
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                const fileName = e.target.files[0].name;
+                const fileSize = (e.target.files[0].size / 1024 / 1024).toFixed(2); 
+                
+
+                fileLabel.innerHTML = `<span class="text-emerald-600 font-bold">Fichier prêt :</span> ${fileName} (${fileSize} MB)`;
+                fileLabel.parentElement.classList.add('bg-emerald-100', 'border-emerald-400');
+            }
+        });
+    }
+
+    const form = document.querySelector('form');
+    
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <svg class="animate-spin h-5 w-5 mr-3 text-white inline" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg> Envoi en cours...`;
+
+            setTimeout(() => {
+                form.innerHTML = `
+                    <div class="text-center py-10 animate-fade-in">
+                        <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-2">Merci pour votre confiance !</h3>
+                        <p class="text-slate-500">Votre demande a été envoyée avec succès.<br>Dutsadi vous répondra sous 24h à 48h.</p>
+                        <button onclick="window.location.reload()" class="mt-8 text-emerald-600 font-bold hover:underline">Envoyer une autre demande</button>
+                    </div>
+                `;
+            }, 1500);
+        });
+    }
+
+
+    const testimonialCards = document.querySelectorAll('main .grid > div');
+    
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+                scrollObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    testimonialCards.forEach((card, index) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = `all 0.6s ease-out ${index * 0.15}s`;
+        
+        scrollObserver.observe(card);
+    });
+});
+</script>
+</body>
+</html>
